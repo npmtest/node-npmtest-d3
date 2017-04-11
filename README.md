@@ -1,0 +1,128 @@
+# test coverage for  [d3 (v4.7.4)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
+#### Data-Driven Documents
+
+[![NPM](https://nodei.co/npm/d3.png?downloads=true)](https://www.npmjs.com/package/d3)
+
+| git-branch : | [alpha](https://github.com/npmtest/node-npmtest-d3/tree/alpha)|
+|--:|:--|
+| coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)|
+| test-report : | [![test-report](https://npmtest.github.io/node-npmtest-d3/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)|
+| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-d3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-d3/tree/gh-pages/build)|
+
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-d3%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-d3/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-d3%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html)
+
+![npmPackageListing](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.npmPackageDependencyTree.svg)
+
+
+
+# package.json
+
+```json
+
+{
+    "author": {
+        "name": "Mike Bostock",
+        "url": "https://bost.ocks.org/mike"
+    },
+    "browser": "build/d3.js",
+    "bugs": {
+        "url": "https://github.com/d3/d3/issues"
+    },
+    "dependencies": {
+        "d3-array": "1.1.1",
+        "d3-axis": "1.0.6",
+        "d3-brush": "1.0.4",
+        "d3-chord": "1.0.4",
+        "d3-collection": "1.0.3",
+        "d3-color": "1.0.3",
+        "d3-dispatch": "1.0.3",
+        "d3-drag": "1.0.4",
+        "d3-dsv": "1.0.5",
+        "d3-ease": "1.0.3",
+        "d3-force": "1.0.6",
+        "d3-format": "1.1.1",
+        "d3-geo": "1.6.3",
+        "d3-hierarchy": "1.1.4",
+        "d3-interpolate": "1.1.4",
+        "d3-path": "1.0.5",
+        "d3-polygon": "1.0.3",
+        "d3-quadtree": "1.0.3",
+        "d3-queue": "3.0.5",
+        "d3-random": "1.0.3",
+        "d3-request": "1.0.5",
+        "d3-scale": "1.0.5",
+        "d3-selection": "1.0.5",
+        "d3-shape": "1.0.6",
+        "d3-time": "1.0.6",
+        "d3-time-format": "2.0.5",
+        "d3-timer": "1.0.5",
+        "d3-transition": "1.0.4",
+        "d3-voronoi": "1.1.2",
+        "d3-zoom": "1.1.4"
+    },
+    "description": "Data-Driven Documents",
+    "devDependencies": {
+        "json2module": "0.0",
+        "package-preamble": "0.0",
+        "rimraf": "2",
+        "rollup": "^0.41.4",
+        "rollup-plugin-ascii": "0.0",
+        "rollup-plugin-node-resolve": "2",
+        "tape": "4",
+        "uglify-js": "^2.8.11"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "a2f40eb57decc51bc469010d48ae74a20e025772",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.7.4.tgz"
+    },
+    "gitHead": "514a18676a6a85d968d20ce0929246220917437a",
+    "homepage": "https://d3js.org",
+    "jsnext:main": "index",
+    "keywords": [
+        "dom",
+        "visualization",
+        "svg",
+        "animation",
+        "canvas"
+    ],
+    "license": "BSD-3-Clause",
+    "main": "build/d3.node.js",
+    "maintainers": [
+        {
+            "name": "mbostock",
+            "email": "mbostock@gmail.com"
+        },
+        {
+            "name": "jasondavies",
+            "email": "jason@jasondavies.com"
+        }
+    ],
+    "module": "index",
+    "name": "d3",
+    "optionalDependencies": {},
+    "readme": "ERROR: No README data found!",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/d3/d3.git"
+    },
+    "scripts": {
+        "postpublish": "git push && git push --tags && cd ../d3.github.com && git pull && cp ../d3/build/d3.js d3.v4.js && cp ../d3/build/d3.min.js d3.v4.min.js && git add d3.v4.js d3.v4.min.js && git commit -m \"d3 ${npm_package_version}\" && git push && cd - && cd ../d3-bower && git pull && cp ../d3/LICENSE ../d3/README.md ../d3/build/d3.js ../d3/build/d3.min.js . && git add -- LICENSE README.md d3.js d3.min.js && git commit -m \"${npm_package_version}\" && git tag -am \"${npm_package_version}\" v${npm_package_version} && git push && git push --tags && cd - && zip -j build/d3.zip -- LICENSE README.md API.md CHANGES.md build/d3.js build/d3.min.js",
+        "prepublish": "npm run test && rollup -c --banner \"$(preamble)\" -f umd -n d3 -o build/d3.js -- index.js && uglifyjs --preamble \"$(preamble)\" build/d3.js -c negate_iife=false -m -o build/d3.min.js",
+        "pretest": "rimraf build && mkdir build && json2module package.json > build/package.js && node rollup.node",
+        "test": "tape 'test/**/*-test.js'"
+    },
+    "version": "4.7.4"
+}
+```
+
+
+
+# misc
+- this document was created with [utility2](https://github.com/kaizhu256/node-utility2)
