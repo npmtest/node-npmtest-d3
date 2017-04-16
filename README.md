@@ -1,7 +1,7 @@
-# test coverage for  [d3 (v4.7.4)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
+# test coverage for  [d3 (v4.8.0)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
 #### Data-Driven Documents
 
-[![NPM](https://nodei.co/npm/d3.png?downloads=true)](https://www.npmjs.com/package/d3)
+[![NPM](https://nodei.co/npm/d3.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/d3)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-d3/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,11 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-d3/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-d3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-d3/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-d3%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)
+[![test-report](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-d3/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-d3%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.npmPackageListing.svg)
 
@@ -35,7 +35,7 @@
         "url": "https://github.com/d3/d3/issues"
     },
     "dependencies": {
-        "d3-array": "1.1.1",
+        "d3-array": "1.2.0",
         "d3-axis": "1.0.6",
         "d3-brush": "1.0.4",
         "d3-chord": "1.0.4",
@@ -46,7 +46,7 @@
         "d3-dsv": "1.0.5",
         "d3-ease": "1.0.3",
         "d3-force": "1.0.6",
-        "d3-format": "1.1.1",
+        "d3-format": "1.2.0",
         "d3-geo": "1.6.3",
         "d3-hierarchy": "1.1.4",
         "d3-interpolate": "1.1.4",
@@ -73,16 +73,16 @@
         "rimraf": "2",
         "rollup": "^0.41.4",
         "rollup-plugin-ascii": "0.0",
-        "rollup-plugin-node-resolve": "2",
+        "rollup-plugin-node-resolve": "3",
         "tape": "4",
         "uglify-js": "^2.8.11"
     },
     "directories": {},
     "dist": {
-        "shasum": "a2f40eb57decc51bc469010d48ae74a20e025772",
-        "tarball": "https://registry.npmjs.org/d3/-/d3-4.7.4.tgz"
+        "shasum": "1ad8d18997869c90b6ad6114e9b92425cee78460",
+        "tarball": "https://registry.npmjs.org/d3/-/d3-4.8.0.tgz"
     },
-    "gitHead": "514a18676a6a85d968d20ce0929246220917437a",
+    "gitHead": "02d5392d825930b2bd27e87d1d9bc44a639e10f6",
     "homepage": "https://d3js.org",
     "jsnext:main": "index",
     "keywords": [
@@ -96,18 +96,15 @@
     "main": "build/d3.node.js",
     "maintainers": [
         {
-            "name": "mbostock",
-            "email": "mbostock@gmail.com"
+            "name": "mbostock"
         },
         {
-            "name": "jasondavies",
-            "email": "jason@jasondavies.com"
+            "name": "jasondavies"
         }
     ],
     "module": "index",
     "name": "d3",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/d3/d3.git"
@@ -118,7 +115,7 @@
         "pretest": "rimraf build && mkdir build && json2module package.json > build/package.js && node rollup.node",
         "test": "tape 'test/**/*-test.js'"
     },
-    "version": "4.7.4"
+    "version": "4.8.0"
 }
 ```
 
