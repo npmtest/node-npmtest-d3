@@ -1,4 +1,7 @@
-# test coverage for  [d3 (v4.8.0)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
+# npmtest-d3
+
+#### test coverage for  [d3 (v4.8.0)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
+
 #### Data-Driven Documents
 
 [![NPM](https://nodei.co/npm/d3.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/d3)
@@ -9,9 +12,15 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-d3/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-d3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-d3/tree/gh-pages/build)|
 
+- [https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
+
 [![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
 
+- [https://npmtest.github.io/node-npmtest-d3/build/test-report.html](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)
+
 [![test-report](https://npmtest.github.io/node-npmtest-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html)
 
 [![apidoc](https://npmdoc.github.io/node-npmdoc-d3/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-d3/build/apidoc.html)
 
