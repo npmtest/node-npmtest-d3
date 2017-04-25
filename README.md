@@ -1,6 +1,6 @@
 # npmtest-d3
 
-#### test coverage for  [d3 (v4.8.0)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
+#### basic test coverage for  [d3 (v4.8.0)](https://d3js.org)  [![npm package](https://img.shields.io/npm/v/npmtest-d3.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-d3) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-d3.svg)](https://travis-ci.org/npmtest/node-npmtest-d3)
 
 #### Data-Driven Documents
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-d3/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-d3/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-d3/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-d3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-d3/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-d3/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-d3/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-d3/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-d3/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-d3/build/coverage.html/index.html)
 
@@ -124,7 +124,8 @@
         "pretest": "rimraf build && mkdir build && json2module package.json > build/package.js && node rollup.node",
         "test": "tape 'test/**/*-test.js'"
     },
-    "version": "4.8.0"
+    "version": "4.8.0",
+    "bin": {}
 }
 ```
 
